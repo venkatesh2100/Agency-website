@@ -282,6 +282,7 @@ p {
   display: flex;
   justify-content: center;
 }
+
 @media (max-width: 1068px) {
   .imge {
     display: none;
@@ -300,10 +301,11 @@ p {
   .cas {
     grid-template-columns: repeat(2, 1fr);
   }
-  .contact {
+ .contact{
     flex-direction: column;
+    
   }
-
+ 
   .contact-form {
     width: 100%;
     padding: 30px 30px 20px;
@@ -326,7 +328,26 @@ p {
   }
 }
 @media (max-width: 768px) {
+  .contact{
+    flex-direction: column;
+  }
+
+  .contact-form .row {
+    flex-direction: column;
+  }
+
   .cas {
     grid-template-columns: repeat(1, 1fr);
   }
+  .contact-form .input50,
+  .contact-form .input100 {
+    width: 100%;
+    margin: 0;
+  }
+  .contact-form {
+    width: 100%;
+    padding: 30px 30px 20px;
+  }
+
+  
 }
